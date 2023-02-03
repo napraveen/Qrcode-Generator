@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration form</title>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Submit Details for Registration</h1>
+      </div>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+        </div>
+        <div class="info">
+          <input type="text" name="data" placeholder="Full name">
+        </div>
+        <button type="submit" href="/">Submit</button>
+        <a href="qr"><button type="button">View my qr</button></a>
+      </form>
+    </div>
+  </body>
+</html>
